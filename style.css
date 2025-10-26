@@ -42,6 +42,7 @@ body {
     padding: 40px 80px;
     border-radius: 25px;
     margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 
 
 
@@ -171,6 +172,7 @@ body {
     border-radius: 25px;
     padding: 50px 0;
     margin-top: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -289,6 +291,7 @@ body {
     border-radius: 25px;
     padding-top: 50px;
     padding-bottom: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -616,6 +619,7 @@ nav a:hover {
     border-radius: 25px;
     padding-top: 50px;
     padding-bottom: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -662,7 +666,8 @@ nav a:hover {
     padding: 40px 80px;
     background-image: url(./img/Gemini_Generated_Image_701odn701odn701o.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
+    background-position: right;
     max-height: 800px;
     max-width: 1600px;
     position: relative;
