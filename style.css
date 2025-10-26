@@ -34,12 +34,18 @@ body {
 }
 
 .main__screen {
-    min-height: 100vh;
+    max-height: 800px;
+    max-width: 1600px;
     background-image: url(./img/bg-main.png);
-    background-size: 100%;
+    background-position: right;
     background-repeat: no-repeat;
     padding: 40px 80px;
     border-radius: 25px;
+    margin: 0 auto;
+
+
+
+    ;
 
 }
 
@@ -104,7 +110,7 @@ body {
 
 /* Основной контент */
 .content {
-    width: 1900px;
+    max-width: 1600px;
     margin: 0 auto;
 
 }
@@ -112,7 +118,7 @@ body {
 .text-block {
     margin-top: 150px;
     flex: 1;
-    max-width: 65%;
+    max-width: 45%;
     z-index: 2;
     /* Поверх изображения */
 }
@@ -125,11 +131,11 @@ body {
 }
 
 .title {
-    font-size: 5vw;
+    font-size: 4vw;
     line-height: 1.1;
     margin: 0 0 30px 0;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    background: linear-gradient(-45deg, #000 20%, #b8860b 70%, #000 80% );
+    background: linear-gradient(-45deg, #000 20%, #b8860b 70%, #000 80%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -137,11 +143,12 @@ body {
     animation: text 7s ease-in-out infinite alternate;
 
 }
+
 @keyframes text {
     0% {
         background-position: 200%
     }
-    
+
 }
 
 .body-text {
@@ -154,25 +161,17 @@ body {
 /* Стили для второй секции */
 
 
-
-
-
-
-
-
-
-
-
-
 /* Общие стили для страницы коллекции */
 .collection-page {
-    background-image: url(./img/bg-seccond.png);
-    background-size: 100%;
+
     background-repeat: no-repeat;
-    min-height: 100vh;
-    margin-top: 50px;
+    max-width: 1600px;
+    margin-top: 50px auto 0 auto;
     align-content: center;
     border-radius: 25px;
+    padding: 50px 0;
+    margin-top: 50px;
+
 }
 
 .collection-grid {
@@ -282,20 +281,22 @@ body {
 
 
 .gallery {
-    background-image: url(./img/bg-seccond.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+ 
+    max-height: 800px;
+    max-width: 1600px;
     margin-top: 50px;
     align-content: center;
     border-radius: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
 }
 
 /* 2. Контейнер Модала */
-.modal-content {
+.gallery-content {
     position: relative;
-    width: 1200px;
-    height: 900px;
+    width: 1000px;
+    height: 700px;
     overflow: hidden;
     border: 1px solid #333;
     box-shadow: 0 0 30px rgba(184, 134, 11, 0.5);
@@ -304,21 +305,12 @@ body {
     border-style: solid;
     box-sizing: border-box;
     margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+
 }
 
-/* 3. Элементы Управления (Кнопка Закрытия и Стрелки) */
-.close-btn {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    color: #ffd700;
-    /* Золотой цвет */
-    font-size: 40px;
-    font-weight: 300;
-    cursor: pointer;
-    line-height: 1;
-    z-index: 1010;
-}
 
 .slider-controls {
     width: 100%;
@@ -447,13 +439,15 @@ body {
 
 
 .contact-form {
-    background-image: url(./img/bg-seccond.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    min-height: 60vh;
+
+    max-height: 800px;
+    max-width: 1600px;
     margin-top: 50px;
     align-content: center;
     border-radius: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
 }
 
 
@@ -599,7 +593,8 @@ nav a:hover {
     background-image: url(./img/Gemini_Generated_Image_701odn701odn701o.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    min-height: 800px;
+    max-height: 800px;
+    max-width: 1600px;
     position: relative;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     margin-top: 50px;
@@ -665,6 +660,7 @@ nav a:hover {
     margin-top: 50px;
     border-radius: 35px;
     padding-bottom: 10px;
+    max-width: 1600px;
 }
 
 .footer-left .logo {
@@ -700,10 +696,11 @@ nav a:hover {
     height: 40px;
     border: 1px solid var(--color-gold);
     border-radius: 50%;
-    justify-content:center;
-    align-items:center
+    justify-content: center;
+    align-items: center
 }
+
 .cosial-img {
-     width: 30px;
+    width: 30px;
     height: 30px;
 }
