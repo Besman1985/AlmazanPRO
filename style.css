@@ -44,11 +44,9 @@ body {
     margin: 0 auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 
-
-
-    ;
-
 }
+
+
 
 /* Шрифты для заголовков */
 
@@ -58,6 +56,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 30px 5%;
+    opacity: 0;
 }
 
 .logo {
@@ -117,11 +116,11 @@ body {
 }
 
 .text-block {
-    margin-top: 150px;
+    margin-top: 80px;
     flex: 1;
     max-width: 45%;
     z-index: 2;
-    /* Поверх изображения */
+
 }
 
 .subtitle {
@@ -129,6 +128,7 @@ body {
     font-weight: 500;
     color: #a0a0a0;
     margin-bottom: 20px;
+
 }
 
 .title {
@@ -142,7 +142,13 @@ body {
     -webkit-text-fill-color: transparent;
     background-size: 300% auto;
     animation: text 7s ease-in-out infinite alternate;
+    opacity: 0;
 
+}
+
+.element-show {
+    opacity: 1;
+    transition: all 3s;
 }
 
 @keyframes text {
@@ -157,7 +163,16 @@ body {
     line-height: 1.6;
     max-width: 80%;
     color: #c0c0c0;
+    opacity: 0;
+    transform: translateY(100%);
 }
+
+.body-text.element-show {
+    opacity: 1;
+    transition: all 2s;
+    transform: translateY(0%);
+}
+
 
 /* Стили для второй секции */
 
@@ -197,6 +212,16 @@ body {
     border-width: 1px;
     border-style: solid;
     height: 100%;
+    opacity: 0;
+    transform: translateY(50%);
+
+}
+
+.card.element-show {
+    opacity: 1;
+    transition: 2s;
+    transform: translateY(0%);
+
 }
 
 .card-image-container {
@@ -310,10 +335,16 @@ body {
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
-
-
+    opacity: 0;
+    transform: translateX(-100%);
 }
 
+.gallery-content.element-show {
+    opacity: 1;
+    transition: all 2s;
+    transform: translateX(0%);
+
+}
 
 .slider-controls {
     width: 100%;
