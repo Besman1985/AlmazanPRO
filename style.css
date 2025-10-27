@@ -876,7 +876,7 @@ nav a:hover {
 
 
     .text-block {
-        max-width: 100%;
+        max-width: 90%;
         margin: 0;
 
     }
@@ -975,7 +975,7 @@ nav a:hover {
     }
 
     .title {
-        font-size: 50px;
+        font-size: 45px;
         margin-top: 30px;
     }
 
@@ -991,13 +991,12 @@ nav a:hover {
         font-size: 16px;
     }
 
-    .hero-content p {
-        padding-top: 20px;
-    }
+
 
     .hero-section {
         padding: 50px 5% 20px 5%;
         background-position: top;
+        margin-top: 0;
 
     }
 
@@ -1006,6 +1005,11 @@ nav a:hover {
         display: block;
         margin: 0 auto;
         max-width: 70%;
+    }
+
+    .hero-content p:first-of-type {
+        font-size: 45px;
+
     }
 
     .footer-center {
@@ -1027,14 +1031,14 @@ nav a:hover {
 
     .footer-section {
         height: 100px;
-       gap: 30px;
-  
-     
+        gap: 30px;
+
+
         padding: 15px 80px;
-      
+
         border-top: 1px solid rgba(212, 175, 55, 0.2);
         margin-top: 20px;
-   
+
     }
 
 }
