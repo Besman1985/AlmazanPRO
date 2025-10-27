@@ -25,7 +25,7 @@
 
 
 body {
-    /* Темный фон, почти черный */
+
     color: #e0e0e0;
     /* Светлый текст */
     font-family: 'Montserrat', sans-serif;
@@ -884,6 +884,7 @@ nav a:hover {
     .gallery-content {
         margin-left: 5%;
         margin-right: 5%;
+        height: 60vh;
     }
 
     .gallery {
@@ -903,6 +904,10 @@ nav a:hover {
         padding-bottom: 30px;
     }
 
+    .contact-form h2 {
+        font-size: 20px;
+    }
+
     .nav-form-container {
         margin-left: 5%;
         margin-right: 5%;
@@ -915,12 +920,12 @@ nav a:hover {
     }
 
     .modal-info-bar {
-        height: 90px;
+        height: 80px;
     }
 
     .modal-title {
 
-        font-size: 18px;
+        font-size: 10px;
 
 
     }
@@ -975,7 +980,7 @@ nav a:hover {
     }
 
     .title {
-        font-size: 45px;
+        font-size: 40px;
         margin-top: 30px;
     }
 
@@ -1005,10 +1010,11 @@ nav a:hover {
         display: block;
         margin: 0 auto;
         max-width: 70%;
+        font-size: 12px;
     }
 
     .hero-content p:first-of-type {
-        font-size: 45px;
+        font-size: 40px;
 
     }
 
