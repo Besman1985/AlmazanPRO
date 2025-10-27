@@ -336,7 +336,7 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-50%);
 }
 
 .gallery-content.element-show {
