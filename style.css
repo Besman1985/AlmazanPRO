@@ -49,10 +49,6 @@ body {
 }
 
 
-
-/* Шрифты для заголовков */
-
-/* Header и Навигация */
 .header {
     display: flex;
     justify-content: space-between;
@@ -221,10 +217,46 @@ body {
 
 .card.element-show {
     opacity: 1;
+    transition: 1s;
+    transform: translateY(0%);
+
+}
+
+.card.element-show:nth-of-type(2) {
+    opacity: 1;
     transition: 2s;
     transform: translateY(0%);
 
 }
+
+.card.element-show:nth-of-type(3) {
+    opacity: 1;
+    transition: 3s;
+    transform: translateY(0%);
+
+}
+
+.card.element-show:nth-of-type(4) {
+    opacity: 1;
+    transition: 1s;
+    transform: translateY(0%);
+
+}
+
+.card.element-show:nth-of-type(5) {
+    opacity: 1;
+    transition: 2s;
+    transform: translateY(0%);
+
+}
+
+.card.element-show:nth-of-type(6) {
+    opacity: 1;
+    transition: 3s;
+    transform: translateY(0%);
+
+}
+
 
 .card-image-container {
     height: 450px;
@@ -470,7 +502,11 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
 
+
 }
+
+
+
 
 .img-navig {
     width: 450px;
@@ -527,6 +563,12 @@ nav a:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
     border: 1px solid #b8860b;
     box-shadow: 0 0 15px #b8860b, inset 0 0 10px rgba(192, 168, 109, 0.5);
+    opacity: 0;
+}
+
+.contact-form-container.element-show {
+    opacity: 1;
+    transition: 2s;
 }
 
 .contact-form-frame h2 {
@@ -616,6 +658,14 @@ nav a:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
     border: 1px solid #b8860b;
     box-shadow: 0 0 15px #b8860b, inset 0 0 10px rgba(192, 168, 109, 0.5);
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.nav-form-container.element-show {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 2s;
 }
 
 .nav-form-frame h2 {
@@ -637,6 +687,7 @@ nav a:hover {
     padding-top: 50px;
     padding-bottom: 50px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
 
 }
 
@@ -853,5 +904,17 @@ nav a:hover {
         font-size: 8px;
 
     }
+
+    .card.element-show:nth-of-type(2),
+    .card.element-show:nth-of-type(3),
+    .card.element-show:nth-of-type(4),
+    .card.element-show:nth-of-type(5),
+    .card.element-show:nth-of-type(6) {
+        opacity: 1;
+        transition: 1.5s;
+        transform: translateY(0%);
+
+    }
+
 
 }
