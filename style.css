@@ -493,7 +493,7 @@ body {
 
 
 .contact-form {
- 
+
     max-height: 800px;
     max-width: 1600px;
     margin-top: 50px;
@@ -865,16 +865,18 @@ nav a:hover {
 @media (max-width: 768px) {
     .collection-grid {
         grid-template-columns: 1fr;
-        /* 1 колонка на мобильных */
+        gap: 20px;
     }
 
     .collection-page {
         padding: 20px 5%;
+        margin-top: 10px;
+
     }
 
 
     .text-block {
-        max-width: 80%;
+        max-width: 100%;
         margin: 0;
 
     }
@@ -884,14 +886,32 @@ nav a:hover {
         margin-right: 5%;
     }
 
+    .gallery {
+        margin-top: 0;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
     .contact-form-container {
         margin-left: 5%;
         margin-right: 5%;
     }
 
+    .contact-form {
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+
     .nav-form-container {
         margin-left: 5%;
         margin-right: 5%;
+
+    }
+
+    .nav-form {
+        margin-top: 0;
+        padding-top: 0;
     }
 
     .modal-info-bar {
@@ -940,24 +960,81 @@ nav a:hover {
     }
 
     .main__screen {
-        padding: 40px 20px;
+        padding: 20px 0 40px 5%;
+        background-position: bottom;
 
+    }
+
+    .logo {
+        max-width: 60%;
     }
 
     .body-text {
-        font-size: 12px;
+        font-size: 16px;
+        margin-top: 50px;
     }
 
     .title {
-        font-size: 20px;
+        font-size: 50px;
+        margin-top: 30px;
     }
+
     .subtitle {
-        font-size: 8px;
+        font-size: 14px;
     }
+
     .navigation {
         display: none;
     }
-     
 
+    .hero-content h1 {
+        font-size: 16px;
+    }
+
+    .hero-content p {
+        padding-top: 20px;
+    }
+
+    .hero-section {
+        padding: 50px 5% 20px 5%;
+        background-position: top;
+
+    }
+
+    .cta-button {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        max-width: 70%;
+    }
+
+    .footer-center {
+        display: none;
+    }
+
+    .social-icon {
+
+
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .cosial-img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-section {
+        height: 100px;
+       gap: 30px;
+  
+     
+        padding: 15px 80px;
+      
+        border-top: 1px solid rgba(212, 175, 55, 0.2);
+        margin-top: 20px;
+   
+    }
 
 }
