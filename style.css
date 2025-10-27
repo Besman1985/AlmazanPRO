@@ -658,13 +658,13 @@ nav a:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
     border: 1px solid #b8860b;
     box-shadow: 0 0 15px #b8860b, inset 0 0 10px rgba(192, 168, 109, 0.5);
-    transform: translateX(100%);
+    transform: translateY(100%);
     opacity: 0;
 
 }
 
 .nav-form-container.element-show {
-    transform: translateX(0%);
+    transform: translateY(0%);
     opacity: 1;
     transition: 2s;
 }
